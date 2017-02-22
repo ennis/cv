@@ -2,6 +2,8 @@
 \documentclass[]{friggeri-cv}
 \usepackage{wasysym}
 \usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{fontawesome}
 \usepackage[utf8]{inputenc} 
 
 \addbibresource{bibliography.bib}
@@ -14,12 +16,14 @@
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{Contact}
-    6 rue des Peupliers
+   \faMapMarker~ 6 rue des Peupliers
     38400 Saint-Martin-d'Hères
     France
     ~
-    \href{mailto:alex.bleron@gmail.com}{alex.bleron@gmail.com}
-\phone~+33606482283
+    \faEnvelope~ \href{mailto:alex.bleron@gmail.com}{alex.bleron@gmail.com}
+\faMobile~+33606482283
+\faGithub~\href{https://github.com/ennis}{github.com/ennis}
+\faLinkedin~\href{https://www.linkedin.com/in/ableron}{linkedin.com/in/ableron}
   \section{Languages}
     French 
     English (TOEIC: 990)
@@ -27,7 +31,8 @@
     Japanese notions (currently taking courses)
   \section{Programming}
     C++, C\#, Java, Lua, VHDL, x86 assembly
-    OpenGL/GLSL, SFML, Antlr, Qt
+    OpenGL/GLSL, SFML, 
+    Antlr, Qt
     \section{Software}
     Photoshop, Maya, Unity, CMake, Git, MS~Office, \LaTeX
 \end{aside}
@@ -43,7 +48,7 @@ Computer graphics, shader programming, stylized (non-photorealistic) and artist-
     {since 2015}
     {Ph.D. candidate in computer graphics}
     {INRIA/Laboratoire Jean Kuntzmann}
-    {Real-time stylized rendering techniques for 3D scenes.\\ Goals:
+    {\emph{Real-time stylized rendering techniques for 3D scenes.}\\ Goals:
     \begin{itemize} 	\item Be able to use digital painting effects and techniques for the stylization of animated 3D scenes.
     \item Propose new techniques to increase the range of styles achievable with real-time stylization primitives.
     \end{itemize}
@@ -89,7 +94,7 @@ Computer graphics, shader programming, stylized (non-photorealistic) and artist-
     {Ensimag projects}
     {}
     {\vspace{-4mm}\begin{itemize}
-    \item Procedural generation of 3D models of fortresses on arbitrary terrains using shape grammars. (\href{https://github.com/ennis/stronghold}{Github link})
+    \item Procedural generation of 3D models of fortresses on arbitrary terrains using shape grammars.
     \item Developement of a compiler for a Java-like language
     %\item Developement of a JPEG decoder/encoder
     %\item Design of a CPU running the MIPS instruction set and its peripherals (in VHDL), and implementation on an FPGA. Ported a version of the GCC compiler for the designed CPU. 
@@ -100,7 +105,7 @@ Computer graphics, shader programming, stylized (non-photorealistic) and artist-
     {Personal C++ projects}
     {}
     {\vspace{-4mm}\begin{itemize}
-\item Small rendering engine using a path tracing algorithm. (\href{https://github.com/ennis/path-tracer}{Github link})
+\item Small rendering engine using a path tracing algorithm.
 \item Lua-scriptable graphics framework on top of OpenGL/GLSL (work in progress) 
 \end{itemize}}
 
