@@ -1,0 +1,125 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage[utf8]{inputenc} 
+
+\addbibresource{bibliography.bib}
+
+\begin{document}
+\header{Alexandre}{Bléron}
+       {Ph.D. candidate in computer graphics}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Contact}
+    6 rue des Peupliers
+    38400 Saint-Martin-d'Hères
+    France
+    ~
+    \href{mailto:alex.bleron@gmail.com}{alex.bleron@gmail.com}
+\phone~+33606482283
+  \section{Languages}
+    French 
+    English (TOEIC: 990)
+    Spanish notions
+    Japanese notions (currently taking courses)
+  \section{Programming}
+    C++, C\#, Java, Lua, VHDL, x86 assembly
+    OpenGL/GLSL, SFML, Antlr, Qt
+    \section{Software}
+    Photoshop, Maya, Unity, CMake, Git, MS~Office, \LaTeX
+\end{aside}
+
+\section{Interests}
+
+Computer graphics, shader programming, stylized (non-photorealistic) and artist-directed rendering, procedural generation, C++
+
+\section{Education}
+
+\begin{entrylist}
+  \entry
+    {since 2015}
+    {Ph.D. candidate in computer graphics}
+    {INRIA/Laboratoire Jean Kuntzmann}
+    {Real-time stylized rendering techniques for 3D scenes.\\ Goals:
+    \begin{itemize} 	\item Be able to use digital painting effects and techniques for the stylization of animated 3D scenes.
+    \item Propose new techniques to increase the range of styles achievable with real-time stylization primitives.
+    \end{itemize}
+    Keywords: stylized rendering, temporal coherence, artistic control.}
+  \entry
+    {2012–2015}
+    {Master's degree}
+    {Grenoble INP - Ensimag}
+    {Followed the Master of Science in Informatics at Grenoble programme (MoSIG). Specialization in graphics, computer vision and robotics.}
+  \entry
+    {2010–2012}
+    {Classes Préparatoires aux Grandes Écoles}
+    {Clermont-Ferrand}
+    {Preparatory courses. Specialization in physics, mathematics and engineering science.}
+ 
+\end{entrylist}
+
+\section{Experience}
+
+\begin{entrylist}
+   \entry
+    {Feb-Jul 2015}
+    {INRIA – Research internship}
+    {Grenoble}
+    {
+    Developed an interactive system for the edition of programmable vector textures, extending the framework proposed by Loi \emph{et al.} (\href{https://hal.inria.fr/hal-01141869}{https://hal.inria.fr/hal-01141869}).
+    %	\item Proposed a technique to interactively select arbitrary repeating patterns on a vector texture and generate code snippets to represent and manipulate the patterns in a programmable way.
+}
+  \entry
+    {Jul-Aug 2014}
+    {CGG – Internship}
+    {Massy}
+    {Developed a standalone version of a seismic imaging algorithm (Reverse Time Migration) for profiling.\\
+    	Analyzed memory access patterns of the algorithm and its CPU cache behavior. Optimized the implementation for a recent CPU architecture.}
+    	
+\end{entrylist}
+
+\section{Projects}
+
+\begin{entrylist}
+  \entry
+    {2012--2015}
+    {Ensimag projects}
+    {}
+    {\vspace{-4mm}\begin{itemize}
+    \item Procedural generation of 3D models of fortresses on arbitrary terrains using shape grammars. (\href{https://github.com/ennis/stronghold}{Github link})
+    \item Developement of a compiler for a Java-like language
+    %\item Developement of a JPEG decoder/encoder
+    %\item Design of a CPU running the MIPS instruction set and its peripherals (in VHDL), and implementation on an FPGA. Ported a version of the GCC compiler for the designed CPU. 
+    \end{itemize}}
+
+  \entry
+    {}
+    {Personal C++ projects}
+    {}
+    {\vspace{-4mm}\begin{itemize}
+\item Small rendering engine using a path tracing algorithm. (\href{https://github.com/ennis/path-tracer}{Github link})
+\item Lua-scriptable graphics framework on top of OpenGL/GLSL (work in progress) 
+\end{itemize}}
+
+\end{entrylist}
+
+
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}
